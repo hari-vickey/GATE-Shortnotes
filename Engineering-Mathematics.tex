@@ -943,23 +943,27 @@ If a function is said to be periodic \(f(t+T)=f(t)\),then T is the period of fun
 \end{itemize}
 
 \subsection*{Analytic Function}
-A function f(z) is said to be analytical function in a region R, if it is analytic at every point of R. It is also called Regular Function (or) holomorphic function.
+A function f(z) is said to be analytical function in a region R, if it is analytic at every point of R. It is also called Regular Function (or) holomorphic function.\\
+
+\textbf{Singular Point}
+If there are some points C for an analytic function in which the function fails to be analytic.
 
 \subsection*{Cauchy-Reimann's Equation}
 Let \(w=f(z)=u+iv\) is an analytic function.
-\[\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y}\ \ \ \ \frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}\ \ \ \ \ \frac{\partial u}{\partial r}=\frac{1}{r}\frac{\partial v}{\partial \theta}\ \ \ \ \frac{\partial v}{\partial r}=-\frac{1}{r}\frac{\partial u}{\partial \theta} \]
+\[\text{For Cartesian System }\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y}\ \ \ \ \frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x};\ \ \text{For Polor System } \frac{\partial u}{\partial r}=\frac{1}{r}\frac{\partial v}{\partial \theta}\ \ \ \ \frac{\partial v}{\partial r}=-\frac{1}{r}\frac{\partial u}{\partial \theta} \]
 
 \subsection*{Milne Thomson's Method}
 To find f(z) when real (or) imaginary part is given by
-\[f(z)=u+iv\ \ \ \ \ \ f'(z)=u_x+iv_x\ = u_x - iv_y\ \ \ \ \ f'(x) = u_x(z,0)-iv_y(z,0)\]
+\[f(z)=u+iv\ \ \ \ \ \ f'(z)=u_x+iv_x\ = u_x - iu_y\ \ \ \ \ f'(x) = u_x(z,0)-iu_y(z,0)\]
 \[\int f'(z)\ dz=\int u_x(z,0)\ dz-i\int v_y(z,0)\ dz + C\]
+\begin{fleqn}
+\(\text{C = k to find real part and C = ik to find imaginary part}\)
+\end{fleqn}
 
 \subsection*{Harmonic Function}
 A real function of two variables x and y posses continuous second order partial differential equations and satisfies laplace equation is called harmonic function.
 \[\overrightarrow{\rm \nabla}\emptyset=\frac{\partial^2\emptyset}{\partial x^2}+\frac{\partial^2\emptyset}{\partial y^2}=0\]
 
-\subsection*{Singular Point}
-If there are some points C for an analytic function in which the function fails to be analytic.
 
 \subsection{Cauchy's Integral Theorem}
 If f(x) is analytic and f'(z) is continuous at all points inside and on simple closed curve C.
@@ -977,7 +981,7 @@ If two function are inside curve partial fractions needs to be applied.
     \item Residue at a simple pole - If z=a is a simple pole, then
     \[[Res\ f(z)]_{z=a}=\lim_{z \to a}(z-a)f(z)\]
     \item Residue at a pole of order n+1, If z=a is a pole of order n+1, then
-    \[[Res\ f(z)]_{z=a}=\frac{1}{n!}\lim_{z \to a}\frac{d^n}{dz^n}(z-a)f(z)\]
+    \[[Res\ f(z)]_{z=a}=\frac{1}{n!}\lim_{z \to a}\frac{d^n}{dz^n}(z-a)^{n+1}f(z)\]
 \end{enumerate}
 
 \subsection*{Cauchy's Residue Theorem}
@@ -989,7 +993,7 @@ If f(z) is analytic function inside a circle C with center at `a' and radius R, 
 \[f(z)=f(a)+\frac{f'(a)}{1!}(z-a)+\frac{f''(a)}{2!}(z-a)^2+\frac{f'''(a)}{3!}(z-a)^3+\ldots\ldots.\infty\]
 
 \subsection{Laurent Series}
-If \(C_1\ and\ C_2\) are two concentric circles with center at `a' and radii r1 and r2 (r1>r2) and if f(z) is analytic on \(C_1\ and\ C_2\) and throughput the annular region R between them, then at each point Z in R.
+If \(C_1\ and\ C_2\) are two concentric circles with center at `a' and radii r1 and r2 \((r1 > r2)\) and if f(z) is analytic on \(C_1\ and\ C_2\) and throughput the annular region R between them, then at each point Z in R.
 \[f(z)=\sum_{n=0}^{\infty}a_n(z-a)^n+\sum_{n=0}^{\infty}b_n(z-a)^{-n}, \ \ \ \ \ \ \ n=0, 1, 2\]
 \[a_n=\frac{1}{2\pi i}\oint_{C1}\frac{f(w)}{(w-a)^{n+1}}dw\ \ \ \ \ b_n=\frac{1}{2\pi i}\oint_{C2}\frac{f(w)}{(w-a)^{-(n+1)}}dw\]
 
