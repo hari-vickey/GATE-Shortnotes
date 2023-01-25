@@ -1154,7 +1154,7 @@ If the given matrix or equations are not in diagnol form then try re-arranging t
 Let initial guess be \(x_o, y_o, z_o\)
 \[X_1=\frac{b_1-a_{12}y_o-a_{13}z_o}{a_{11}}\ \ \ Y_1=\frac{b_2-a_{21}x_o-a_{23}z_o}{a_{22}}\ \ \ Z_1=\frac{b_3-a_{31}x_o-a_{32}y_o}{a_{33}}\]
 
-\subsection*{Gauss Seldel Method}
+\subsection*{Gauss Seidel Method}
 This method is twice faster than Jacobi's method because simultaneous substitutions. Let initial guess be \(x_o, y_o, z_o\)
 \[X_1=\frac{b_1-a_{12}y_o-a_{13}z_o}{a_{11}}\ \ \ Y_1=\frac{b_2-a_{21}x_1-a_{23}z_o}{a_{22}}\ \ \ Z_1=\frac{b_3-a_{31}x_1-a_{32}y_1}{a_{33}}\]
 
@@ -1202,16 +1202,17 @@ Order of Error = \(h^4\) and Accuracy \(O(h^4)\)\\
 \textbf{1/3rd Rule}: if N is even (14/2)
 \[\int_a^bf(x)\ dx=\frac{h}{3}[1(y_o+y_n)+4(y_1+y_3+y_5+\ldots\ldots.+y_{n-1})+2(y_2+y_4+\ldots\ldots.y_{n-2})]\]
 \textbf{3/8th Rule}: if N is odd (13/2)
-\[\int_a^bf(x)\ dx=\frac{h}{3}[1(y_o+y_n)+4(y_1+y_2+y_4+\ldots\ldots.+y_{n-1})+2(y_3+y_6+\ldots\ldots.y_{n-3})]\]
+\[\int_a^bf(x)\ dx=\frac{3h}{8}[1(y_o+y_n)+3(y_1+y_2+y_4+\ldots\ldots.+y_{n-1})+2(y_3+y_6+\ldots\ldots.y_{n-3})]\]
+For Both Trapezoidal Rule and Simpsons Rule, \(h=\frac{b-a}{n}\)
 \begin{table}[h!]
 \centering
 \setlength{\tabcolsep}{1em}
 \tabulinesep=2.5mm
 \begin{tabu}{|c|c|}
 \hline
-\textbf{\begin{tabu}[c]{@{}c@{}}Order of \\ fitting Polynomial\end{tabu}} & \textbf{Rule}        \\ \hline
-1                                                                               & Trapezoidal Rule     \\ \hline
-2                                                                               & 1/3rd Simpson's Rule \\ \hline
+\textbf{\begin{tabu}[c]{@{}c@{}}Order of \\ fitting Polynomial\end{tabu}}       & \textbf{Rule}        \\ \hline
+1 (Linear for single Variable and hyperbolic for two variables)                 & Trapezoidal Rule     \\ \hline
+2 (Parabolic)                                                                   & 1/3rd Simpson's Rule \\ \hline
 3                                                                               & 3/8th Simpson's Rule \\ \hline
 \end{tabu}
 \end{table}
