@@ -162,8 +162,8 @@ If ``\(\lambda\)" has ``p" linear independent eigen vectors then GM=p\\
     \item If the sum of elements of every row/column is same then one of the eigen value of the matrix is equal to the sum.
     \item For a real matrix, if \(\alpha+i\beta\) is an eigen value then \(\alpha-i\beta\) will also be an eigen value[conjugate pair].
     \item If a eigen value is \(\alpha+i\beta\) for a complex matrix, then there is no conjugate pair.
-    \item The eigen values of a real symmetric matrix are real.
-    \item The eigen values of a real skew-symmetric matrix are either zero (or) purely imaginary.
+    \item The eigen values of a real symmetric matrix \([A=A^T]\) are real.
+    \item The eigen values of a real skew-symmetric matrix \([A=-A^T]\) are either zero (or) purely imaginary.
     \item The eigen vector corresponding to the distinct eigen values of a real symmteric matrix will be orthogonal to each other.
     \item The eigen values of a hermition matrix are always real.
     \item The eigen values of a unitary matrix (or) real orthogonal matrix satisfies \(|\lambda|=1\)
@@ -504,7 +504,7 @@ f(x+h, y+k)=f(x,y)+[hf_x+kf_y]+\frac{1}{2!}[h^2f_{xx}+k^2f_{yy}+2hkf_{xy}] \\
 \[\Gamma \frac{1}{2} = \sqrt{\pi}\ \ \ \ \ \ \Gamma n\ \Gamma(1-n)=\frac{\pi}{sin\ n\pi}
 \ \ \ \  \Gamma (n+1) = 
 \begin{cases}
-    n\sqrt{n} & \text{'n' is fraction}\\
+    n\Gamma n & \text{'n' is fraction}\\
     n! & \text{'n' is integer}
 \end{cases}
 \]
@@ -685,7 +685,7 @@ Consider if the surface is projected to x-y plane, then the surface integral is 
 \subsection{Vector Calculus Theorems}
 \subsection*{Green's Theorem}
 If R is a closed Region of the XY plane bounded by a simple curve C is given as
-\[\int_C(Mdx+Ndy)=\iint_R\left(\frac{\partial N}{\partial x}-\frac{\partial M}{\partial y} \,dxdy \right)\]
+\[\int_C(Mdx+Ndy)=\iint_R\left(\frac{\partial N}{\partial x}-\frac{\partial M}{\partial y}\right) \,dxdy \]
 
 \subsection*{Gauss Divergence Theorem}
 If a closed surface S bounding a Volume is given by the Gauss Divergence Theorem as below.
