@@ -1,3 +1,3 @@
-# GATE ME Shortnotes
+# GATE short notes
 
-This repository contains shortnotes for GATE Mechanical Exam for General Aptitude and Engineering Mathematics
+This repository contains short notes for GATE Exam for General Aptitude and Engineering Mathematics

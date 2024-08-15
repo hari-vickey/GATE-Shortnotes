@@ -7,3 +7,5 @@
 *.gz
 *.toc
 *.toc
+*.fdb_latexmk
+*.fls
